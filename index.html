@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zunnurbek — проекты и саундтрек</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EDF1F6;--surface:#FFFFFF;--ink:#0E1A2B;--mute:#4A5A70;--line:#C9D3E0;--accent:#1F4FE0;--ok:#0B7A4B;--warn:#9A5B00;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1522;--surface:#162236;--ink:#E8EEF7;--mute:#9DB0C8;--line:#2A3A55;--accent:#7CA0FF;--ok:#4AD18F;--warn:#E8B04A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1522;--surface:#162236;--ink:#E8EEF7;--mute:#9DB0C8;--line:#2A3A55;--accent:#7CA0FF;--ok:#4AD18F;--warn:#E8B04A;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Source Serif 4",Georgia,serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+main{max-width:56rem;margin:0 auto;padding:0 1.25rem 4rem}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+.hero{padding:4.5rem 0 3rem}
+h1{font-size:clamp(2.6rem,9vw,5.2rem);font-weight:700;letter-spacing:-.03em;max-width:12ch}
+.lead{max-width:38rem;color:var(--mute);margin:1.5rem 0 0;font-size:1.15rem}
+.report{margin-top:2.5rem;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:4px;padding:1.25rem 1.5rem;max-width:34rem}
+.report h2{font-size:1rem;margin-bottom:.6rem}
+.report ul{list-style:none;margin:0;padding:0;font-size:.98rem}
+.report li{display:flex;justify-content:space-between;gap:1rem;padding:.35rem 0;border-top:1px solid var(--line)}
+.report li:first-child{border-top:0}
+.ok{color:var(--ok);font-weight:600}.warn{color:var(--warn);font-weight:600}.mute{color:var(--mute)}
+section{margin-top:4rem}
+section>h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:1.5rem;letter-spacing:-.02em}
+.proj{display:grid;grid-template-columns:1fr;gap:.5rem;padding:1.6rem 0;border-top:1px solid var(--line)}
+.proj h3{font-size:1.45rem}
+.proj p{margin:.3rem 0;max-width:40rem}
+.meta{font-size:.95rem;color:var(--mute)}
+.links{display:flex;flex-wrap:wrap;gap:1.25rem;margin-top:.5rem;font-weight:600}
+.small{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.small div{background:var(--surface);border:1px solid var(--line);padding:1rem 1.1rem;border-radius:4px}
+.small h3{font-size:1.1rem;margin-bottom:.25rem}
+.small p{margin:0;font-size:.95rem;color:var(--mute)}
+.music{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:1.5rem}
+.music p{margin:.4rem 0;max-width:38rem}
+.btn{display:inline-block;margin-top:.8rem;padding:.7rem 1.2rem;background:var(--accent);color:#fff;font:600 1rem "Bricolage Grotesque",Arial,sans-serif;border-radius:4px;text-decoration:none}
+:root[data-theme="dark"] .btn,:root:not([data-theme="light"]) .btn{color:#0D1522}
+footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--mute);font-size:.95rem}
+@media (prefers-color-scheme:light){.btn{color:#fff}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <h1>Zunnurbek</h1>
+  <p class="lead">Я делаю веб-приложения и инструменты с ИИ: от платформы для найма до робота, который сам проверяет сайты на ошибки.</p>
+  <div class="report" aria-label="Что проверено на этой странице">
+    <h2>Что на этой странице проверено</h2>
+    <ul>
+      <li><span>12 репозиториев на GitHub</span><span class="ok">найдены через API</span></li>
+      <li><span>Демо TalentLens</span><span class="ok">открывается</span></li>
+      <li><span>Демо Mansory</span><span class="ok">открывается</span></li>
+      <li><span>Демо Auto Salon</span><span class="warn">не проверено</span></li>
+      <li><span>Плейлист в Spotify</span><span class="ok">создан</span></li>
+    </ul>
+  </div>
+</header>
+
+<section aria-labelledby="main-projects">
+  <h2 id="main-projects">Главные проекты</h2>
+
+  <article class="proj">
+    <h3>TalentLens</h3>
+    <p>Платформа для найма с ИИ-подбором. Вакансии, кандидаты, сопоставление и канбан-воронка найма. Интерфейс на английском, русском и узбекском.</p>
+    <p class="meta">Чистый JavaScript, без бэкенда. Данные хранятся в браузере. «ИИ» в демо работает на правилах: объясняет совпадение, показывает пробелы в навыках, предлагает вопросы для интервью.</p>
+    <div class="links"><a href="https://zunnurbek111.github.io/talentlens/">Открыть демо</a><a href="https://github.com/zunnurbek111/talentlens">Код на GitHub</a></div>
+  </article>
+
+  <article class="proj">
+    <h3>AI Website Tester</h3>
+    <p>Открывает сайт в настоящем браузере, нажимает кнопки и заполняет формы, как пользователь. Собирает найденные проблемы со скриншотами, а Claude объясняет каждую и предлагает исправление.</p>
+    <p class="meta">Python, Playwright, Chromium, Claude. Результат: <code>report.html</code> и <code>results.json</code>. В демо сравниваются отчёты до и после исправления пяти заложенных ошибок.</p>
+    <div class="links"><a href="https://github.com/zunnurbek111/ai-website-checker">Код на GitHub</a></div>
+  </article>
+
+  <article class="proj">
+    <h3>AUT Student Transcript System</h3>
+    <p>Выбираешь студента из списка и получаешь готовый академический транскрипт. GPA по семестрам и общий, кредиты ECTS, поиск, сортировка и аналитика, включая Dean’s List.</p>
+    <p class="meta">100 вымышленных студентов, транскрипт на английском и русском, без сборки и зависимостей.</p>
+    <div class="links"><a href="https://github.com/zunnurbek111/aut-transcript-system">Код на GitHub</a></div>
+  </article>
+</section>
+
+<section aria-labelledby="more">
+  <h2 id="more">Другие работы</h2>
+  <div class="small">
+    <div><h3>Auto Salon Prototype</h3><p>Прототип сайта автосалона на TypeScript, собран в Google AI Studio.</p><div class="links"><a href="https://github.com/zunnurbek111/auto-salon-prototype">GitHub</a><a href="https://auto-salon-prototype.vercel.app">Демо (не проверено)</a></div></div>
+    <div><h3>Mansory</h3><p>Витрина тюнинг-ателье с каталогом из девяти моделей: мощность, разгон, скорость.</p><div class="links"><a href="https://zunnurbek111.github.io/mansory-prototype/">Демо</a><a href="https://github.com/zunnurbek111/mansory-prototype">GitHub</a></div></div>
+    <div><h3>Iron Engines</h3><p>Сайт о легендарных автомобильных моторах.</p><div class="links"><a href="https://github.com/zunnurbek111/AutoMotor-Guide">GitHub</a></div></div>
+    <div><h3>Cosmos</h3><p>Страница о космосе на русском и английском.</p><div class="links"><a href="https://github.com/zunnurbek111/cosmos">GitHub</a></div></div>
+    <div><h3>Device Comparator</h3><p>Сайт для сравнения устройств.</p><div class="links"><a href="https://github.com/zunnurbek111/comparett">GitHub</a></div></div>
+  </div>
+</section>
+
+<section aria-labelledby="sound">
+  <h2 id="sound">Саундтрек для работы</h2>
+  <div class="music">
+    <p><strong>Сосредоточенное вечернее программирование</strong></p>
+    <p>Электроника и lo-fi для долгих вечеров с кодом. Плейлист создан в Spotify по моему описанию. Ссылка открывается в Spotify, внутри страницы плеер не встроен.</p>
+    <a class="btn" href="https://open.spotify.com/playlist/74uoJoLeyUNmLrpLsnsxqP">Слушать в Spotify</a>
+  </div>
+</section>
+
+<footer>
+  <p>Все проекты: <a href="https://github.com/zunnurbek111">github.com/zunnurbek111</a>. Страница собрана Claude из данных GitHub, Google Drive и Spotify. Это снимок на 23 октября 2026 года.</p>
+</footer>
+</main>
+</body>
+</html>
